@@ -26,7 +26,7 @@ client.connect((err) => {
   console.log('Connected to the database');
 });
 
-app.get('/lessons/get_topics', (req, res) => {
+app.get('/api/lessons/get_topics', (req, res) => {
 
   // Request data
   console.log('req.query.userInput', req.query.userInput)
@@ -95,7 +95,7 @@ app.get('/lessons/get_topics', (req, res) => {
     });
 });
 
-app.get('/lessons/get_lesson', (req, res) => {
+app.get('/api/lessons/get_lesson', (req, res) => {
 
   // Request data
   console.log('req.query.topic', req.query.topics)
